@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Transportation Survey</title>
+    <title>Stress Survey</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery.js"></script>
@@ -10,49 +10,65 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h2>Transportation Survey</h2>
+        <h1>Stress Survey</h1>
       </div>
-      <form id="transportation_survey">
-        <div class="form-group">
-          <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
-          <input type="checkbox" name="work-transportation" value="bike"> Riding a bike.<br>
-          <input type="checkbox" name="work-transportation" value="car">Driving a car.<br>
-          <input type="checkbox" name="work-transportation" value="carpool">Carpooling with others.<br>
-          <input type="checkbox" name="work-transportation" value="walk">Walking.<br>
-          <input type="checkbox" name="work-transportation" value="bus">Riding the bus.<br>
-          <input type="checkbox" name="work-transportation" value="train">Riding the train.<br>
-          <input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.<br>
-          <input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.<br>
-          <input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-          <input type="checkbox" name="work-transportation" value="skateboard">Skateboarding.<br>
-          <input type="checkbox" name="work-transportation" value="rollerblade">Rollerblading.<br>
-          <input type="checkbox" name="work-transportation" value="scooter">Riding a scooter.<br>
-          <input type="checkbox" name="work-transportation" value="other">Another mode of transportation not listed here.<br>
+      <form id="stress_survey">
+        <div class="form-group1">
+          <h2>High Stress Warning Signs:</h2>
+          <h4>Check all that apply</h4>
+          <input type="checkbox" name="warning-input" value="High blood pressure">High blood pressure<br>
+          <input type="checkbox" name="warning-input" value="Apathy">Apathy<br>
+          <input type="checkbox" name="warning-input" value="Difficulty falling or staying asleep">Difficulty falling or staying asleep<br>
+          <input type="checkbox" name="warning-input" value="Headaches">Headaches<br>
+          <input type="checkbox" name="warning-input" value="Fatigue">Fatigue<br>
+          <input type="checkbox" name="warning-input" value="Loss of appetite or overeating “comfort foods”">Loss of appetite or overeating “comfort foods”<br>
+          <input type="checkbox" name="warning-input" value="Chest pains, rapid heartbeat">Chest pains, rapid heartbeat<br>
+          <input type="checkbox" name="warning-input" value="Dry mouth">Dry mouth<br>
+          <input type="checkbox" name="warning-input" value="Upset stomach">Upset stomach<br>
+          <input type="checkbox" name="warning-input" value="Loss of sexual desire and/or ability">Loss of sexual desire and/or ability.<br>
+          <input type="checkbox" name="warning-input" value="Acne">Acne<br>
         </div>
-        <div class="form-group">
-          <p>In the past year, I have used the following modes of transportation to travel to other activities and events:</p>
-          <input type="checkbox" name="fun-transportation" value="bike"> Riding a bike.<br>
-          <input type="checkbox" name="fun-transportation" value="car">Driving a car.<br>
-          <input type="checkbox" name="fun-transportation" value="carpool">Carpooling with others.<br>
-          <input type="checkbox" name="fun-transportation" value="walk">Walking.<br>
-          <input type="checkbox" name="fun-transportation" value="bus">Riding the bus.<br>
-          <input type="checkbox" name="fun-transportation" value="train">Riding the train.<br>
-          <input type="checkbox" name="fun-transportation" value="streetcar">Riding the streetcar.<br>
-          <input type="checkbox" name="fun-transportation" value="taxi">Taking a taxi.<br>
-          <input type="checkbox" name="fun-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-          <input type="checkbox" name="fun-transportation" value="skateboard">Skateboarding.<br>
-          <input type="checkbox" name="fun-transportation" value="rollerblade">Rollerblading.<br>
-          <input type="checkbox" name="fun-transportation" value="scooter">Riding a scooter.<br>
-          <input type="checkbox" name="fun-transportation" value="other">Another mode of transportation not listed here.<br>
+        <div class="form-group2">
+          <h2>High Stress Symptoms:</h2>
+          <h4>Check all that apply</h4>
+          <input type="checkbox" name="symptom-input" value="Becoming easily agitated, frustrated, and moody">Becoming easily agitated, frustrated, and moody<br>
+          <input type="checkbox" name="symptom-input" value="Avoiding others">Avoiding others<br>
+          <input type="checkbox" name="symptom-input" value="Feeling bad about yourself (low self-esteem), lonely, worthless, and depressed">Feeling bad about yourself (low self-esteem), lonely, worthless, and depressed<br>
+          <input type="checkbox" name="symptom-input" value="Frequent colds and infections">Frequent colds and infections<br>
+          <input type="checkbox" name="symptom-input" value="Nervousness and shaking, ringing in the ear, cold or sweaty hands and feet">Nervousness and shaking, ringing in the ear, cold or sweaty hands and feet<br>
+          <input type="checkbox" name="symptom-input" value="Clenched jaw and grinding teeth">Clenched jaw and grinding teeth<br>
+          <input type="checkbox" name="symptom-input" value="Constant worrying">Constant worrying<br>
+          <input type="checkbox" name="symptom-input" value="Poor judgment">Poor judgment<br>
+          <input type="checkbox" name="symptom-input" value="Being pessimistic or seeing only the negative side">Being pessimistic or seeing only the negative side<br>
+          <input type="checkbox" name="symptom-input" value="Forgetfulness and disorganization">Forgetfulness and disorganization<br>
+          <input type="checkbox" name="symptom-input" value="Procrastinating and avoiding responsibilities">Procrastinating and avoiding responsibilities<br>
+          <input type="checkbox" name="symptom-input" value="Increased use of alcohol, drugs, or cigarettes">Increased use of alcohol, drugs, or cigarettes<br>
+          <input type="checkbox" name="symptom-input" value="Exhibiting more nervous behaviors, such as nail biting, fidgeting, and pacing">Exhibiting more nervous behaviors, such as nail biting, fidgeting, and pacing<br>
+        </div>
+        <div class="form-group3">
+          <h2>Coping Skills:</h2>
+          <h4>Check all that apply</h4>
+          <input type="checkbox" name="coping-input" value="Diaphragmatic or “deep breathing” exercises">Diaphragmatic or “deep breathing” exercises<br>
+          <input type="checkbox" name="coping-input" value="Avoiding Caffeine, Alcohol, and Nicotine">Avoiding Caffeine, Alcohol, and Nicotine<br>
+          <input type="checkbox" name="coping-input" value="Physical Activity">Physical Activity<br>
+          <input type="checkbox" name="coping-input" value="Getting plenty of sleep">Getting plenty of sleep<br>
+          <input type="checkbox" name="coping-input" value="Keeping a diary">Keeping a diary<br>
         </div>
        <button type="submit">Submit Survey</button>
       </form>
-      <span id="work-responses">
+      <span id="warning-responses">
         <p><b>You use the following methods of transportation to travel to work or school:</b></p>
       </span>
       <br>
-      <span id="fun-responses">
+      <span id="symptom-responses">
         <p><b>You use the following methods of transportation to travel to other activities and events:</b></p>
+      </span>
+      <br>
+      <span id="coping-responses">
+        <p><b>You use the following methods of transportation to travel to other activities and events:</b></p>
+      </span>
+      <span>
+      <a id="coping-help" href="https://www.anxietycanada.com/sites/default/files/anxiety-bc-coping-strategies-v3.pdf">Click here for help managing stress</a>
       </span>
     </div>
   </body>

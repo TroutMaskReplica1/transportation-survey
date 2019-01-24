@@ -1,17 +1,30 @@
 $(document).ready(function(){
-  $("form#transportation_survey").submit(function(event){
+  $("form#stress_survey").submit(function(event){
     event.preventDefault();
-    $("#work-responses").show();
-    $("input:checkbox[name=work-transportation]:checked").each(function(){
-      var workTransportationMode = $(this).val();
-      var capitalWorkTransportationMode = workTransportationMode.toUpperCase();
-      $('#work-responses').append(capitalWorkTransportationMode + "<br>");
+    $("#warning-responses").show();
+    $("input:checkbox[name=warning-input]:checked").each(function(){
+      var warningInputMode = $(this).val();
+      $('#warning-responses').append(warningInputMode + "<br>");
     });
-    $("#fun-responses").show();
-    $("input:checkbox[name=fun-transportation]:checked").each(function(){
-      var funTransportationMode = $(this).val();
-      $('#fun-responses').append(funTransportationMode + "<br>");
+    $("#symptom-responses").show();
+    $("input:checkbox[name=symptom-input]:checked").each(function(){
+      var symptomInputMode = $(this).val();
+      $('#symptom-responses').append(symptomInputMode + "<br>");
     });
-    $('#transportation_survey').hide();
+    $("#coping-responses").show();
+    $("input:checkbox[name=coping-input]:checked").each(function(){
+      var copingInputMode = $(this).val();
+      var copingInput = $(".form-group3 :checked").attr("checked");
+      if (copingInput >= 2) {
+        $('#coping-responses').append(copingInputMode + "<br>");
+      } else {
+        $('#coping-help').show();
+        $('#warning-responses').hide();
+        $('#symptom-responses').hide();
+        $('#coping-responses').hide();
+      }
+    });
+    $('#stress_survey').hide();
+
   });
 });

@@ -1,7 +1,15 @@
-#work-responses {
+#warning-responses {
   display: none;
 }
 
-#fun-responses {
+#symptom-responses {
+  display: none;
+}
+
+#coping-responses {
+  display: none;
+}
+
+#coping-help {
   display: none;
 }
